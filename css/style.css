@@ -3,6 +3,7 @@
 */
 
 
+
 .primary-header a,
 .primary-footer a {
   color: #fff;
@@ -31,11 +32,36 @@
   height: 30px;
 }
 
-.navbar.center .navbar-inner {
-  text-align: center;
+.navbar-expand-lg .navbar-collapse {
+  font: 20px  "Avenir Next", Arial, sans-serif;
+  justify-content: center;
 }
 
-.navbar.center .navbar-inner .nav {
-  display:inline-block;
-  float: none;
+.hero-img {
+  height: 500px;
+  background: black;
+  color: white;
+  font: 40px "Avenir Next", Arial, sans-serif;
+}
+
+nav {
+  height: 50px;
+}
+
+.sidebar {
+  font: 20px  "Avenir Next", Arial, sans-serif;
+  color: white;
+  background:black;
+  height: 450px;
+}
+
+#red {
+  background: red;
+}
+
+footer {
+  font: 20px  "Avenir Next", Arial, sans-serif;
+  color: white;
+  background: black;
+  height: 50px;
 }
