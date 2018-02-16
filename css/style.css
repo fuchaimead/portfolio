@@ -38,8 +38,13 @@
 }
 
 .hero-img {
-  height: 500px;
-  background: black;
+  height: 450px;
+  background-image: url("../images/hero_img_full.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
   color: white;
   font: 40px "Avenir Next", Arial, sans-serif;
 }
@@ -70,3 +75,58 @@ footer {
 #shift {
   margin-top: -50px;
 }
+
+
+
+.content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction    : column;
+  -ms-flex-direction          : column;
+  flex-direction                : column;
+  -webkit-justify-content   : center; 
+  justify-content               : center; 
+
+  position: absolute;
+  top: 0; bottom: 0; left: 30px; right: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .content {
+      position: relative;
+      top: 0; bottom: 0; left: 0; right: 0;
+      padding: 30px;
+  }
+
+  .hero-img {
+    height: 300;
+    background-image: url("../images/hero_img_full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    font: 20px "Avenir Next", Arial, sans-serif;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .hero-img {
+    height: 300;
+    background-image: url("../images/hero_img_full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    font: 20px "Avenir Next", Arial, sans-serif;
+  }
+}
+  
