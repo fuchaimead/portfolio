@@ -46,6 +46,7 @@
 
 nav {
   height: 50px;
+  background: white
 }
 
 .sidebar {
@@ -64,4 +65,8 @@ footer {
   color: white;
   background: black;
   height: 50px;
+}
+
+#shift {
+  margin-top: -50px;
 }
