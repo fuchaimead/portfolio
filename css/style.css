@@ -126,10 +126,7 @@ footer {
 }
 
 
-#social-media {
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
+.left {
+  padding-left: 10%;
+  color: white;
 }
-
-
-
