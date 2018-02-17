@@ -1,9 +1,6 @@
 /* ======================
   Links 
 */
-
-
-
 .primary-header a,
 .primary-footer a {
   color: #fff;
@@ -105,28 +102,34 @@ footer {
 
   .hero-img {
     height: 300;
-    background-image: url("../images/hero_img_full.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 100%;
-    color: white;
     font: 20px "Avenir Next", Arial, sans-serif;
   }
 }
 
 @media only screen and (max-width : 768px) {
   .hero-img {
-    height: 300;
-    background-image: url("../images/hero_img_full.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 100%;
-    color: white;
-    font: 20px "Avenir Next", Arial, sans-serif;
+    height: 350px;
+    font: 25px "Avenir Next", Arial, sans-serif;
   }
 }
   
+
+.words {
+  font: 40px "Baskervill", serif;
+  padding: 5%;
+}
+
+footer {
+  padding-top: 1%;
+  color: white;
+  font-size: 15px;
+}
+
+
+#social-media {
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+}
+
+
+
