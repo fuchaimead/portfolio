@@ -34,9 +34,34 @@
   justify-content: center;
 }
 
-.hero-img {
+#hero-img {
   height: 450px;
   background-image: url("../images/hero_img_full.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  color: white;
+  font: 40px "Avenir Next", Arial, sans-serif;
+}
+
+#hero-img-lake {
+  height: 450px;
+  background-image: url("../images/lake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  color: white;
+  font: 40px "Avenir Next", Arial, sans-serif;
+  background-attachment: fixed;
+}
+
+#hero-img-lake {
+  height: 450px;
+  background-image: url("../images/lake.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -58,7 +83,7 @@ nav {
   height: 450px;
 }
 
-#red {
+.red {
   background: red;
 }
 
@@ -73,8 +98,15 @@ footer {
   margin-top: -50px;
 }
 
+.space-extra {
+  padding-top: 100px;
+}
 
-
+#hobbies {
+  background: black;
+  color: white;
+  padding-left: 10%;
+}
 .content {
   display: -webkit-box;
   display: -moz-box;
@@ -100,14 +132,14 @@ footer {
       padding: 30px;
   }
 
-  .hero-img {
+  #hero-img {
     height: 300;
     font: 20px "Avenir Next", Arial, sans-serif;
   }
 }
 
 @media only screen and (max-width : 768px) {
-  .hero-img {
+  #hero-img {
     height: 350px;
     font: 25px "Avenir Next", Arial, sans-serif;
   }
@@ -125,6 +157,18 @@ footer {
   font-size: 15px;
 }
 
+
+.facts {
+  height: 450px;
+  background-image: url("../images/trees.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  color: white;
+  font: 40px "Avenir Next", Arial, sans-serif;
+}
 
 .left {
   padding-left: 10%;
