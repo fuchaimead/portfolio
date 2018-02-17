@@ -147,7 +147,7 @@ footer {
   
 
 .words {
-  font: 40px "Baskervill", serif;
+  font-family: "Baskervill", serif;
   padding: 5%;
 }
 
@@ -164,6 +164,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
   width: 100%;
   color: white;
@@ -173,4 +174,22 @@ footer {
 .left {
   padding-left: 10%;
   color: white;
+}
+
+
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 75%;
+}
+
+.contact-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
