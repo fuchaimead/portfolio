@@ -1,3 +1,4 @@
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -41,43 +42,61 @@ $('a[href*="#"]')
     var react = $('#react')
     var wordpress = $('#wordpress')
     var graphic = $('#graphic') 
-
-    react.on('click', pickLink)
-    wordpress.on('click', pickLink)
-    graphic.on('click', pickLink)
-
-    function pickLink() {
-     var allSections = $('.link')
-
-     for(var i = 0; i < allSections.length; i++ ){
-       allSections[i].className = "hide"
-     }
-     
-      var sectionId = this.attributes['data-link'].value
-      var section = $('#sectionId')
-      console.log(sectionId)
-      if (section.className === "hide" ){
-        section.className = ""
-      } else {
-        section.className = "hide"
-      }
-    }
+    var section1 = $('#section1')
+    var section2 = $('#section2')
+    var section3 = $('#section3')
     
+    react.on('click', function() {
+      if (section1.hasClass('hide')) {
+        section1.removeClass()
+      } else {
+        section1.addClass('hide')
+      }
+    })
+    wordpress.on('click', function() {
+      if (section2.hasClass('hide')) {
+        section2.removeClass()
+      } else {
+        section2.addClass('hide')
+      }
+    })
+    graphic.on('click', function() {
+      if (section3.hasClass('hide')) {
+        section3.removeClass()
+      } else {
+        section3.addClass('hide')
+      }
+    })
+    
+    // react.on('click', pickLink)
+    // wordpress.on('click', pickLink)
+    // graphic.on('click', pickLink)
 
-    // react.on('click', function() {
-    //   $("#section1").toggle();
-    // })
-
-    // wordpress.on('click', function() {
-    //   $("#section2").toggle();
-    // })
-
-    // graphic .on('click', function() {
-    //   $("#section3").toggle();
-    // })
+    // function pickLink() {
+    //   var sectionId = $(this).attr('data-link')
+    //   var section = $('#sectionId')
+    //   console.log(sectionId)
+    //   debugger
+    //   if (section.hasClass("hide")) {
+    //     section.removeClass()
+    //   } else {
+    //     section.addClass("hide")
+    //   }
+    // }
   })
+      // react.on('click', function() {
+      //   $("#section1").toggle();
+      // })
+  
+      // wordpress.on('click', function() {
+      //   $("#section2").toggle();
+      // })
+  
+      // graphic.on('click', function() {
+      //   $("#section3").toggle();
+      // })
 
-  var slideIndex = 1;
+var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
