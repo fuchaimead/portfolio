@@ -1,15 +1,20 @@
-/* ======================
-  Links 
-*/
+/* Links */
 .primary-header a,
 .primary-footer a {
   color: #fff;
 }
 
+/* global styles  */
+
 .primary-header {
   background: black;
   width: 100%;
   height: 120px;
+}
+
+nav {
+  height: 50px;
+  background: white
 }
 
 #logo {
@@ -34,6 +39,16 @@
   justify-content: center;
 }
 
+.red {
+  background: red;
+}
+
+.words {
+  font-family: "Baskervill", serif;
+  padding: 5%;
+}
+
+/* home page  */
 #hero-img {
   height: 450px;
   background-image: url("../images/hero_img_full.jpg");
@@ -46,6 +61,7 @@
   font: 40px "Avenir Next", Arial, sans-serif;
 }
 
+/* about page */
 #hero-img-lake {
   height: 450px;
   background-image: url("../images/lake.jpg");
@@ -71,10 +87,6 @@
   font: 40px "Avenir Next", Arial, sans-serif;
 }
 
-nav {
-  height: 50px;
-  background: white
-}
 
 .sidebar {
   font: 20px  "Avenir Next", Arial, sans-serif;
@@ -83,9 +95,7 @@ nav {
   height: 450px;
 }
 
-.red {
-  background: red;
-}
+
 
 footer {
   font: 20px  "Avenir Next", Arial, sans-serif;
@@ -107,6 +117,7 @@ footer {
   color: white;
   padding-left: 10%;
 }
+
 .content {
   display: -webkit-box;
   display: -moz-box;
@@ -145,11 +156,10 @@ footer {
   }
 }
   
-
-.words {
-  font-family: "Baskervill", serif;
-  padding: 5%;
+.hide {
+  display: none;
 }
+
 
 footer {
   padding-top: 1%;
@@ -177,6 +187,8 @@ footer {
 }
 
 
+
+/* contact page  */
 #myVideo {
   position: relative;
   right: 0;
@@ -193,6 +205,8 @@ footer {
   width: 100%;
   padding: 20px;
 }
+
+
 
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}

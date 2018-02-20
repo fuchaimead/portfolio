@@ -35,6 +35,48 @@ $('a[href*="#"]')
     }
   });
 
+
+
+  $(function() {
+    var react = $('#react')
+    var wordpress = $('#wordpress')
+    var graphic = $('#graphic') 
+
+    react.on('click', pickLink)
+    wordpress.on('click', pickLink)
+    graphic.on('click', pickLink)
+
+    function pickLink() {
+     var allSections = $('.link')
+
+     for(var i = 0; i < allSections.length; i++ ){
+       allSections[i].className = "hide"
+     }
+     
+      var sectionId = this.attributes['data-link'].value
+      var section = $('#sectionId')
+      console.log(sectionId)
+      if (section.className === "hide" ){
+        section.className = ""
+      } else {
+        section.className = "hide"
+      }
+    }
+    
+
+    // react.on('click', function() {
+    //   $("#section1").toggle();
+    // })
+
+    // wordpress.on('click', function() {
+    //   $("#section2").toggle();
+    // })
+
+    // graphic .on('click', function() {
+    //   $("#section3").toggle();
+    // })
+  })
+
   var slideIndex = 1;
 showDivs(slideIndex);
 
