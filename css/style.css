@@ -4,8 +4,33 @@
   color: #fff;
 }
 
-/* global styles  */
+a:hover {
+  color: red;
+  text-decoration: none;
+}
 
+/* global styles  */
+.space {
+  height: 30px;
+}
+
+.red {
+  background: red;
+}
+
+.words {
+  font-family: "Baskervill", serif;
+  padding: 5%;
+}
+
+footer {
+  font: 20px  "Avenir Next", Arial, sans-serif;
+  color: white;
+  background: black;
+  height: 50px;
+}
+
+/* header */ 
 .primary-header {
   background: black;
   width: 100%;
@@ -20,7 +45,6 @@ nav {
 #logo {
   font: 60px "Avenir Next", Arial, sans-serif;
   letter-spacing: 10px;
-  color: white;
   padding-left: 5%;
 }
 
@@ -30,23 +54,12 @@ nav {
   color: white;
 }
 
-.space {
-  height: 30px;
-}
-
 .navbar-expand-lg .navbar-collapse {
   font: 20px  "Avenir Next", Arial, sans-serif;
   justify-content: center;
 }
 
-.red {
-  background: red;
-}
 
-.words {
-  font-family: "Baskervill", serif;
-  padding: 5%;
-}
 
 /* home page  */
 #hero-img {
@@ -75,18 +88,6 @@ nav {
   background-attachment: fixed;
 }
 
-#hero-img-lake {
-  height: 450px;
-  background-image: url("../images/lake.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  color: white;
-  font: 40px "Avenir Next", Arial, sans-serif;
-}
-
 
 .sidebar {
   font: 20px  "Avenir Next", Arial, sans-serif;
@@ -98,12 +99,6 @@ nav {
 
 
 
-footer {
-  font: 20px  "Avenir Next", Arial, sans-serif;
-  color: white;
-  background: black;
-  height: 50px;
-}
 
 #shift {
   margin-top: -50px;
@@ -212,16 +207,23 @@ footer {
   padding: 20px;
 }
 
-
-
 .arrow {
   color: black;
   font-size: 30px;
 }
 
-.d-block {
+.d-block{
   /* margin-left: 15%; */
-  height: 450px;
+  /* background-size: cover; */
+  max-height: 450px;
+  margin:auto;
 
 }
 
+.web {
+  max-height: 225px;
+  margin:auto;
+  display: flex;
+  align-content: center;
+  background-color: black;
+}
