@@ -42,7 +42,6 @@ nav {
   background: white
 }
 
-
 #logo {
   font: 60px "Avenir Next", Arial, sans-serif;
   letter-spacing: 10px;
@@ -87,9 +86,7 @@ nav {
   background-attachment: fixed;
 }
 
-.nav-link {
-  display: inline !important;
-}
+
 
 .sidebar {
   font: 20px  "Avenir Next", Arial, sans-serif;
@@ -102,6 +99,20 @@ nav {
 .space-extra {
   padding-top: 100px;
 }
+
+.navbar-collapse.collapse{
+  display: inline !important;
+}
+
+.navbar-nav>li {
+  float: left !important;
+  padding-right: 2%;
+}
+
+.navbar-nav{
+  display: inline !important;
+}
+
 
 #hobbies {
   background: black;
@@ -163,6 +174,15 @@ nav {
     font: 30px "Avenir Next", Arial, sans-serif;
     background-attachment: fixed;
   }
+
+  #logo {
+    font: 40px "Avenir Next", Arial, sans-serif;
+  }
+
+  .nav-link {
+    font-size: 15px !important;
+  }
+
 }
 
 @media only screen and (max-width : 768px) {
@@ -170,17 +190,6 @@ nav {
     height: 350px;
     font: 25px "Avenir Next", Arial, sans-serif;
   }
-
-
-
-  .navbar-nav.navbar-right:last-child {
-    margin-right: -15px !important;
-  }
-  
-  .navbar-right {
-    float: right!important;
-  }
-
 }
   
 .stuff {
@@ -218,7 +227,9 @@ footer {
   color: white;
 }
 
-
+.center {
+  justify-content: center;
+}
 
 /* contact page  */
 #myVideo {
@@ -269,4 +280,45 @@ footer {
 
 .big {
   font-size: 35px;
+}
+
+
+/* gallery */
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: "Avenir Next", serif;
+}
+
+.responsive {
+  padding: 0px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+      width: 49.9999999%;
+      margin: 6px 0;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .responsize {
+      width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
