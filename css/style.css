@@ -42,6 +42,7 @@ nav {
   background: white
 }
 
+
 #logo {
   font: 60px "Avenir Next", Arial, sans-serif;
   letter-spacing: 10px;
@@ -58,8 +59,6 @@ nav {
   font: 20px  "Avenir Next", Arial, sans-serif;
   justify-content: center;
 }
-
-
 
 /* home page  */
 #hero-img {
@@ -88,6 +87,9 @@ nav {
   background-attachment: fixed;
 }
 
+.nav-link {
+  display: inline !important;
+}
 
 .sidebar {
   font: 20px  "Avenir Next", Arial, sans-serif;
@@ -97,13 +99,6 @@ nav {
   padding: 5%;
 }
 
-
-
-
-#shift {
-  margin-top: -50px;
-}
-
 .space-extra {
   padding-top: 100px;
 }
@@ -111,7 +106,8 @@ nav {
 #hobbies {
   background: black;
   color: white;
-  padding-left: 10%;
+  padding: 15px 0px 5px 30px;
+  font: 20px  "Avenir Next", Arial, sans-serif
 }
 
 .content {
@@ -131,6 +127,9 @@ nav {
   top: 0; bottom: 0; left: 30px; right: 30px;
 }
 
+
+/* media queries */
+
 @media only screen and (max-width: 480px) {
 
   .content {
@@ -143,6 +142,27 @@ nav {
     height: 300;
     font: 20px "Avenir Next", Arial, sans-serif;
   }
+
+  .sidebar {
+    font: 20px  "Avenir Next", Arial, sans-serif;
+    color: white;
+    background:black;
+    height: 300px;
+    padding: 10%;
+  }
+
+  #hero-img-lake {
+    height: 450px;
+    background-image: url("../images/lake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    font: 30px "Avenir Next", Arial, sans-serif;
+    background-attachment: fixed;
+  }
 }
 
 @media only screen and (max-width : 768px) {
@@ -150,6 +170,17 @@ nav {
     height: 350px;
     font: 25px "Avenir Next", Arial, sans-serif;
   }
+
+
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+  }
+  
+  .navbar-right {
+    float: right!important;
+  }
+
 }
   
 .stuff {
@@ -169,7 +200,7 @@ footer {
 }
 
 
-.facts {
+#facts {
   height: 450px;
   background-image: url("../images/trees.jpg");
   background-repeat: no-repeat;
@@ -191,15 +222,16 @@ footer {
 
 /* contact page  */
 #myVideo {
-  position: relative;
+  position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
+  z-index: -1;
   min-height: 75%;
 }
 
 .contact-content {
-  position: absolute;
+  position: relative;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
@@ -213,11 +245,9 @@ footer {
 }
 
 .d-block{
-  /* margin-left: 15%; */
-  /* background-size: cover; */
   max-height: 450px;
   margin:auto;
-
+  width: 100%;
 }
 
 .web {
@@ -226,4 +256,17 @@ footer {
   display: flex;
   align-content: center;
 
+}
+
+
+.col-sm-6 {
+  padding: 5%;
+}
+
+.center-block{
+  padding-top: 50px;
+}
+
+.big {
+  font-size: 35px;
 }
