@@ -37,15 +37,16 @@ $('a[href*="#"]')
   });
 
 
+
 function showone(thechosenone) {
     $('.hide').each(function(index) {
-         if ($(this).attr("id") == thechosenone) {
+        if ($(this).attr("id") == thechosenone) {
               $(this).fadeIn(200);
-         }
-         else {
+        }
+        else {
               $(this).fadeOut(400);
-         }
+        }
     });
 }
-   
+
 

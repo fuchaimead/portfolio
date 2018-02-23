@@ -285,9 +285,16 @@ footer {
 
 /* gallery */
 
+.description {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 div.gallery img {
   width: 100%;
   height: auto;
+
 }
 
 div.desc {
@@ -321,4 +328,25 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* .hidden {
+  display: none;
+} */
+
+
+#mouse-over {
+  opacity: 0;
+}
+
+#mouse-over:hover {
+  opacity: 1;
 }
