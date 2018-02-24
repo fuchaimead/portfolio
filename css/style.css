@@ -23,6 +23,10 @@ a:hover {
   padding: 5%;
 }
 
+.small {
+  font: 20px "Baskervill", serif;
+}
+
 footer {
   font: 20px  "Avenir Next", Arial, sans-serif;
   color: white;
@@ -363,9 +367,8 @@ div.desc {
   transform: translate(-50%, -50%);
 }
 
-
 .panels {
-  min-height:100vh;
+  min-height:450px;
   overflow: hidden;
   display: flex;
 }
@@ -393,27 +396,25 @@ div.desc {
 }
 
 .panel1 { background-image:url(../images/shopping_website.png); height: 450px;}
-.panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-.panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-.panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-.panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+.panel2 { background-image:url(../images/portal.png); height: 450px; }
+
 
 .panel > *:first-child {transform: translateY(-100%);}
 .panel.open-active > *:first-child {transform: translateY(0);}
 .panel > *:last-child {transform: translateY(100%);}
 .panel.open-active > *:last-child {transform: translateY(0);}
 
-.panel p {
-  text-transform: uppercase;
-  font-family: 'Amatic SC', cursive;
-  text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 2em;
-}
 .panel p:nth-child(2) {
-  font-size: 4em;
+  font-size: 2em;
 }
 
 .panel.open {
-  font-size:40px;
+  font-size: 25px;
   flex: 5;
+}
+
+.websites {
+  background: black;
+  color: white;
+  padding: 2%;
 }
