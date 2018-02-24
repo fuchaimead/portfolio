@@ -1,3 +1,13 @@
+@keyframes fadeInElement {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fadeInElement {
+  animation-name: fadeInElement;
+  animation-duration: 2s;
+}
+
 /* Links */
 .primary-header a,
 .primary-footer a {
@@ -42,8 +52,15 @@ footer {
 }
 
 nav {
+  background: white;
   height: 50px;
-  background: white
+  width: 100%;
+  text-align: center;
+}
+
+nav li {
+  float: none;
+  display: inline-block;
 }
 
 #logo {
@@ -100,6 +117,10 @@ nav {
   padding: 5%;
 }
 
+#projects-sidebar {
+  height: auto;
+}
+
 .space-extra {
   padding-top: 100px;
 }
@@ -109,14 +130,47 @@ nav {
 }
 
 .navbar-nav>li {
-  float: left !important;
   padding-right: 2%;
 }
 
-.navbar-nav{
+.navbar-nav {
   display: inline !important;
 }
 
+#projects-navbar {
+  align-items: center;
+  background-color: red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#projects-navbar a {
+  color: white;
+  font-size: 1.2em !important;
+}
+
+@media all and (max-width: 800px) {
+  #projects-navbar {
+    height: 100px;
+    justify-content: space-around;
+    padding-top: 1%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #projects-navbar {
+    flex-direction: column;
+  }
+}
+
+/* #projects-navbar .nav-item a {
+  color: white !important;
+}
+
+#projects-navbar .nav-item a:hover {
+  color: yellow !important;
+} */
 
 #hobbies {
   background: black;
@@ -260,7 +314,7 @@ footer {
 }
 
 .d-block{
-  max-height: 450px;
+  /* max-height: 450px; */
   margin:auto;
   width: 100%;
 }
@@ -322,6 +376,18 @@ div.desc {
   width: 24.99999%;
 }
 
+.responsive img {
+  -webkit-filter: brightness(100%);
+}
+.responsive img:hover {
+  -webkit-filter: brightness(60%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 @media only screen and (max-width: 700px) {
   .responsive {
       width: 49.9999999%;
@@ -348,7 +414,7 @@ div.desc {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
-  padding:5%;
+  padding: 5%;
 }
 
 #mouse-over {
