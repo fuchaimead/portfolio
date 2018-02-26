@@ -238,7 +238,7 @@ nav li {
   }
 }
   
-.stuff {
+.hide {
   display: none;
 }
 
@@ -287,14 +287,6 @@ footer {
   min-height: 75%;
 }
 
-.contact-content {
-  position: relative;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
 
 .arrow {
   color: black;
@@ -302,7 +294,6 @@ footer {
 }
 
 .d-block{
-  /* max-height: 450px; */
   margin:auto;
   width: 100%;
 }
@@ -313,12 +304,8 @@ footer {
   display: flex;
   align-content: center;
   z-index: -1;
-
 }
-/* 
-.overlay {
-    background: rgba(0, 0, 0, 0.8);
-} */
+
 
 
 .col-sm-6 {
@@ -330,6 +317,11 @@ footer {
 
 .center-block{
   padding-top: 50px;
+  position: relative;
+  bottom: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 .big {
@@ -340,9 +332,26 @@ footer {
 /* gallery */
 
 .description {
-  position: relative;
+  /* position: relative;
   text-align: center;
-  color: white;
+  color: white; */
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap{
+  position: relative;
+  height: 300px;
+  width: 300px;
+} 
+
+.img-wrap:hover .description {
+  visibility: visible;
+  opacity: 1;
+
 }
 
 div.gallery img {
@@ -401,17 +410,10 @@ div.desc {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5%;
+  color: white;
+  font-size: 25px;
 }
 
-#mouse-over {
-  opacity: 0;
-}
-
-#mouse-over:hover {
-  opacity: 1;
-}
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -471,4 +473,9 @@ div.desc {
   background: black;
   color: white;
   padding: 2%;
+}
+
+a:hover {
+  color: red;
+  text-decoration: none;
 }

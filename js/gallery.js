@@ -1,5 +1,5 @@
 function showone(thechosenone) {
-  $('.hide').each(function(index) {
+  $('.show').each(function(index) {
       if ($(this).attr("id") == thechosenone) {
             $(this).fadeIn(200);
       }
