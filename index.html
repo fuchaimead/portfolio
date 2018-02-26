@@ -10,32 +10,32 @@
 </head> 
 
   <body>
-    <div class="fadeInElement">
-      <header class="primary-header"> 
-        <div class="space"> </div>
-        <span> <a href="./index.html" id="logo">FUCHAI </a></span> 
-        <span id="name"> MEAD </span>
-      </header>
-        <nav class="navbar navbar-light navbar-expand-lg sticky-top">
-          <div class="collapse navbar-collapse center" id="navbarNav">
-            <div class="center"> 
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#skills">SKILLS <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">ABOUT ME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">SAY HELLO</a>
-              </li>
-            </ul>
-            </div>
-            </div>
-        </nav>
+    <header class="primary-header"> 
+      <div class="space"> </div>
+      <span> <a href="./index.html" id="logo">FUCHAI </a></span> 
+      <span id="name"> MEAD </span>
+    </header>
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top">
+      <div class="collapse navbar-collapse center" id="navbarNav">
+        <div class="center"> 
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#skills">SKILLS <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">SAY HELLO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="fadeInElement">
         <div id="hero-img">   
           <div class="content">
             <div class="row">
@@ -48,6 +48,7 @@
               </div>
             </div>
           </div>
+          </div>
           <div class="row">
               <a name="skills"> </a>
           <div class="col-sm-4 sidebar">
@@ -56,28 +57,32 @@
               <p> Every day I work towards learning more. Learning new languages and techniques to make me a better developer.</p>
             
             </div>
-            <div class="col-sm-8" >
+            <div class="col-sm-8" style="text-align: center;">
               <p class="words big"> JavaScript | React | Ruby on Rails | Semantic UI | Bootstrap | PostgreSQL | Axios | Wordpress | Photoshop | Indesign | Illustrator | Social Media Management 
               </p>
             </div>
           </div>
 
-          <nav id="projects-navbar" >  
-              <ul>
-                <li class="nav-item">
-                  <a class="nav-link" id="react" href="javascript:showone('section1');">REACT JS<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="wordpress" href="javascript:showone('section2');">WORDPRESS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="graphic" href="javascript:showone('section3');">GRAPHIC DESIGN</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="graphic" href="javascript:showone('section4');">LOGOS</a>
-                </li>
-              </ul>
-            </nav>
+          <nav class="navbar navbar-light navbar-expand-lg red">  
+            <div class="collapse navbar-collapse center" id="navbarNav">
+              <div class="center"> 
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" id="react" href="javascript:showone('section1');">REACT JS<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="wordpress" href="javascript:showone('section2');">WORDPRESS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="graphic" href="javascript:showone('section3');">GRAPHIC DESIGN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="graphic" href="javascript:showone('section4');">LOGOS</a>
+                  </li>
+                </ul>
+               </div>
+            </div>
+          </nav>
             <div class="row" style="max-height: 720px;">
                 <div class="col-sm-8">
                   <div class="hide" id="section1"> 
@@ -193,7 +198,7 @@
                   </div>          
               </footer>
       </div>
-    </div>
+
            
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"

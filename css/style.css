@@ -1,5 +1,5 @@
 @keyframes fadeInElement {
-  from { opacity: 0; }
+  from { opacity: .5; }
   to { opacity: 1; }
 }
 
@@ -14,10 +14,6 @@
   color: #fff;
 }
 
-a:hover {
-  color: red;
-  text-decoration: none;
-}
 
 /* global styles  */
 .space {
@@ -163,14 +159,6 @@ nav li {
     flex-direction: column;
   }
 }
-
-/* #projects-navbar .nav-item a {
-  color: white !important;
-}
-
-#projects-navbar .nav-item a:hover {
-  color: yellow !important;
-} */
 
 #hobbies {
   background: black;
