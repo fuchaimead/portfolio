@@ -10,4 +10,4 @@ function include(file) {
 include('./js/gallery.js');
 include('./js/imageEffects.js');
 include('./js/smoothScrolling.js');
-include('./js/snowStorm.js')
+include('./js/snowstorm.js')
