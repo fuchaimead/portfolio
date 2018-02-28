@@ -179,9 +179,7 @@ var snowStorm = (function(window, document) {
         o.style.top = (Math.min(y, docHeight-storm.flakeHeight)) + 'px';
 
       }
-
     }
-
   };
 
   this.events = (function() {
@@ -665,3 +663,4 @@ var snowStorm = (function(window, document) {
   return this;
 
 }(window, document));
+
